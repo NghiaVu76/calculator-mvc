@@ -1,0 +1,8 @@
+:root {
+  /* color */
+  --background-color: #ecf0f3;
+  --background-hover-color: rgb(241, 227, 227);
+  --text-color: rgb(70, 70, 70);
+  --white: #fff;
+  --box-shadow-color: rgba(0, 0, 0, 0.16);
+}

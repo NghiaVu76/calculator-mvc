@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--background-color);
+  font-family: sans-serif;
+  outline: none;
+}
+
+h1 {
+  color: var(--text-color);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  background-color: var(--background-color);
+  padding: 15px;
+  border-radius: 30px;
+  box-shadow: inset 5px 5px 12px var(--white),
+    5px 5px 12px var(--box-shadow-color);
+  display: grid;
+  grid-template-columns: repeat(4, 70px);
+}
+
+.calculator-display {
+  height: 100px;
+  width: 280px;
+  background-color: var(--background-color);
+  box-shadow: inset -5px -5px 12px var(--white),
+    inset 5px 5px 12px var(--box-shadow-color);
+  border: none;
+  border-radius: 30px;
+  color: var(--text-color);
+  font-size: 27px;
+  font-weight: 700;
+  text-align: end;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.calculator-keys {
+  grid-column: span 4;
+  grid-template-columns: repeat(4, 70px);
+  width: 280px;
+}
+
+.operation-display {
+  color: red;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+button {
+  height: 48px;
+  width: 48px;
+  background-color: var(--background-color);
+  box-shadow: -5px -5px 12px var(--white), 5px 5px 12px var(--box-shadow-color);
+  border-radius: 50%;
+  border: none;
+  margin: 10px;
+  font-size: 18px;
+}
+button:hover {
+  background-color: var(--background-hover-color);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.key-operator {
+  background-color: rgb(18, 182, 111);
+}
+.key-operator:hover {
+  background-color: rgb(162, 162, 50);
+}
+
+.clear-button {
+  grid-column: 1 / span 2;
+  grid-row: 6;
+  background-color: orange;
+}
+.clear-button:hover {
+  background-color: rgb(255, 38, 0);
+}
+
+.key-equal {
+  width: 115px;
+  border-radius: 40px;
+  background-color: rgb(255, 0, 136);
+}
+.key-equal:hover {
+  background-color: red;
+}
+
+@keyframes col {
+  0% {
+    color: red;
+  }
+  33% {
+    color: green;
+  }
+  100% {
+    color: blue;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
